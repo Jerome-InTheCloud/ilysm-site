@@ -1,0 +1,46 @@
+/*stye.css*/
+
+/*default header*/
+.logo {
+	margin: 5rem;
+}
+
+.header-default {
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-default {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: hsl(800000 0% 100% / 0.25);
+	backdrop-filter: blur(0.25rem);
+}
+
+.nav-default a {
+	text-decoration: none;
+}
+
+.nav-default a > [aria-hidden="true"] {
+	font-weight: 400;
+	margin-inline-end: 0.75em;
+}
+
+@media (max-width: 35em) {
+	.nav-default {
+		position: fixed;
+		inset: 0 0 0 30%;
+		flex-direction: column;
+		padding: min(30vh, 10rem) 2em;
+	}
+}
+
+.flex {
+	display: inline-flex;
+	gap: var(--gap, 5rem);
+}
+
+.grid {
+	display: grid;
+}
